@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+   <style>
+      .Conteiner {
+      background-color: #2C2217;
+      border: 1px solid blue;
+      box-sizing: border-box;
+      font-size: 14px;
+      color: red;
+      float: left;
+      width: 800px;
+      border-radius: 1em;
+      text-align: center;
+      }
+      .body {
+        color: #FFFAD5;
+        background: #eebb88;
+        display: table;
+      }
+      #title {
+      background:#708090;
+      text-align: right;
+      font-size: 25px;
+      border-radius: 1em;
+      margin-left: 25px;
+      padding-left: 30px;
+      padding-right: 30px;
+      text-align:right;
+      }
+      #header {
+      background:#604000;
+      padding: 30px;
+      text-align: center;
+      border-radius: 2em;
+      color: Brown;
+      font-size: 25px;
+      }
+	  #textum{
+	  display: none;
+	  }
+	  #textdois{
+	  display: none;
+	  }
+	  #texttres{
+	  display: none;
+	  }
+   </style>
+   		<script type="text/javascript">
+			function abrirum(){
+				document.getElementById('textum').style.display = 'block';
+			}
+			function fecharum(){
+				document.getElementById('textum').style.display =  'none';
+			}
+			function abrirdois(){
+				document.getElementById('textdois').style.display = 'block';
+			}
+			function fechardois(){
+				document.getElementById('textdois').style.display =  'none';
+			}
+			function abrirtres(){
+				document.getElementById('texttres').style.display = 'block';
+			}
+			function fechartres(){
+				document.getElementById('texttres').style.display =  'none';
+			}
+	</script>
+   <head>
+      <title>Our Menu</title>
+   </head>
+   <body class="body">
+      <div>
+         <h1 id= "header">
+         Out Menu
+         <h1/>
+      </div>
+      <div href="#" onMouseOver="abrirum();" class="Conteiner"
+	       href="#" onMouseOut="fecharum();" class="Conteiner"
+	  >
+         <h2 id="title">Beef
+		 </h2>
+		 <div id="textum">
+         <p>Lorem ipsum dolor sit omet, consectetur odipisicing elit,<br />
+            sed do eiusmod tempor incididunt ut labore et dolore magno oliquo.<br />
+            Ut enim ad minim veniam, quis roatrud exercitation ullomco loboris nisi ut oliquip ex ea commodo consequat.
+         </p>
+         </div>
+		 </div>
+      <div href="#" onMouseOver="abrirdois();" class="Conteiner"
+	       href="#" onMouseOut="fechardois();" class="Conteiner"
+	  >
+            <h2 id="title">Sushi</h2>
+			<div id="textdois">
+            <p style="text-align:center;">Lorem ipsum dolor sit omet, consectetur odipisicing elit,<br />
+               sed do eiusmod tempor incididunt ut labore et dolore magno oliquo.<br />
+               Ut enim ad minim veniam, quis roatrud exercitation ullomco loboris nisi ut oliquip ex ea commodo consequat.
+            </p>
+		 </div>
+         </div>
+      <div href="#" onMouseOver="abrirtres();" class="Conteiner"
+	       href="#" onMouseOut="fechartres();" class="Conteiner"
+	  >
+            <h2 id="title">Chicken</h2>
+			<div id="texttres">
+            <p tyle="text-align:center;">Lorem ipsum dolor sit omet, consectetur odipisicing elit,<br />
+               sed do eiusmod tempor incididunt ut labore et dolore magno oliquo.<br />
+               Ut enim ad minim veniam, quis roatrud exercitation ullomco loboris nisi ut oliquip ex ea commodo consequat.
+            </p>
+			</div>
+         </div>
+   </body>
